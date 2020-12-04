@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EfCore</name>
+    </assembly>
+    <members>
+        <member name="M:EfCore.Controllers.PedidoController.Get">
+            <summary>
+                Método para listar todos os pedidos do nosso sistema
+            </summary>
+            <returns>Lista de pedidos efetuados</returns>
+        </member>
+        <member name="M:EfCore.Controllers.PedidoController.Get(System.Guid)">
+            <summary>
+                Método para buscar os dados de um pedido especifico
+            </summary>
+            <param name="id">Código de identificação do pedido</param>
+            <returns>Dados do pedido buscado</returns>
+        </member>
+        <member name="M:EfCore.Controllers.PedidoController.Post(System.Collections.Generic.List{EfCore.Domains.PedidoItem})">
+            <summary>
+                Método para cadastro de um pedido
+            </summary>
+            <param name="_pedidosItens">Produtos no qual você solicitará no seu pedido</param>
+            <returns>Dados referente ao pedido cadastrado</returns>
+        </member>
+        <member name="M:EfCore.Controllers.ProdutosController.Get">
+            <summary>
+                Método para listar os produtos inseridos no sistema
+            </summary>
+            <returns>Todos os produtos cadastrados</returns>
+        </member>
+        <member name="M:EfCore.Controllers.ProdutosController.Get(System.Guid)">
+            <summary>
+                Método para buscar os dados referente a um produto especifico
+            </summary>
+            <param name="id">O código identificador do produto</param>
+            <returns>Dados pertinentes ao produto pesquisado</returns>
+        </member>
+        <member name="M:EfCore.Controllers.ProdutosController.Post(EfCore.Domains.Produto)">
+            <summary>
+                Método para cadastro de um novo produto
+            </summary>
+            <param name="_produto">Produto capturado através do formulário</param>
+            <returns>Dados referente ao produto cadastrado</returns>
+        </member>
+        <member name="M:EfCore.Repositories.ProdutoRepository.ListarPodutos">
+            <summary>
+                Lista todos os nossos produtos cadastrados no nosso sistema
+            </summary>
+            <returns>Lista com todos os produtos no sistemas</returns>
+        </member>
+        <member name="M:EfCore.Repositories.ProdutoRepository.BuscarProdutoId(System.Guid)">
+            <summary>
+                Buscar informações do produto informado
+            </summary>
+            <param name="_idProduto">Código de identificação do produto</param>
+            <returns>Dados do produto</returns>
+        </member>
+        <member name="M:EfCore.Repositories.ProdutoRepository.BuscarProdutoNome(System.String)">
+            <summary>
+                Buscar produtos de acordo com o nome do produto
+            </summary>
+            <param name="_nomeProduto">Nome do produto</param>
+            <returns>Lista com os produtos</returns>
+        </member>
+        <member name="M:EfCore.Repositories.ProdutoRepository.CadastrarProduto(EfCore.Domains.Produto)">
+            <summary>
+                Adicionando um novo produto ao nosso sistema
+            </summary>
+            <param name="_produto"></param>
+            <returns>Dados do produto cadastrado</returns>
+        </member>
+        <member name="M:EfCore.Repositories.ProdutoRepository.ExcluirProduto(System.Guid)">
+            <summary>
+                Excluindo produto especifico
+            </summary>
+            <param name="_idProduto">Código de identificação do produto</param>
+        </member>
+    </members>
+</doc>
